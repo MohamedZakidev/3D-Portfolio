@@ -1,9 +1,23 @@
 import { PerspectiveCamera } from "@react-three/drei"
 import { Canvas } from "@react-three/fiber"
+import { Leva } from "leva"
+import { Suspense } from "react"
+import { useMediaQuery } from "react-responsive"
+import CanvasLoader from "../components/CanvasLoader"
+import HackerRoom from "../components/HackerRoom"
+import { calculateSizes } from "../constants"
 
 function Hero() {
+    const isSmall = useMediaQuery({ maxWidth: 440 })
+    const isMobile = useMediaQuery({ maxWidth: 768 })
+    const isTablet = useMediaQuery({ minWidth: 768, maxWidth: 1024 })
+
+    const sizes = calculateSizes(isSmall, isMobile, isTablet)
+    console.log(sizes)
+
     return (
         <section className="min-h-screen border-2 border-blue-500 w-full flex flex-col relative">
+            <Leva />
             <div className="w-full mx-auto flex flex-col mt-20 sm:mt-36 c-space gap-3">
                 <p className="text-2xl sm:text-3xl font-medium text-white text-center font-generalsans">
                     Hi, I&apos;m Mohamed
@@ -14,7 +28,16 @@ function Hero() {
 
             <div className="w-full h-full absolute inset-0">
                 <Canvas className="w-full h-full">
-                    <PerspectiveCamera makeDefault position={[0, 0, 30]} />
+                    <Suspense fallback={<CanvasLoader />}>
+                        <PerspectiveCamera makeDefault position={[0, 0, 20]} />
+                        <HackerRoom
+                            rotation={[0, -Math.PI, 0]}
+                            position={sizes.deskPosition}
+                            scale={sizes.deskScale}
+                        />
+                        <ambientLight intensity={1} />
+                        <directionalLight position={[10, 10, 10]} intensity={0.5} />
+                    </Suspense>
                 </Canvas>
             </div>
         </section>
