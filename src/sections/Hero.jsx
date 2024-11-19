@@ -5,6 +5,8 @@ import { Suspense } from "react"
 import { useMediaQuery } from "react-responsive"
 import CanvasLoader from "../components/CanvasLoader"
 import HackerRoom from "../components/HackerRoom"
+import ReactLogo from "../components/ReactLogo"
+import Target from "../components/Target"
 import { calculateSizes } from "../constants"
 
 function Hero() {
@@ -13,7 +15,6 @@ function Hero() {
     const isTablet = useMediaQuery({ minWidth: 768, maxWidth: 1024 })
 
     const sizes = calculateSizes(isSmall, isMobile, isTablet)
-    console.log(sizes)
 
     return (
         <section className="min-h-screen border-2 border-blue-500 w-full flex flex-col relative">
@@ -35,6 +36,11 @@ function Hero() {
                             position={sizes.deskPosition}
                             scale={sizes.deskScale}
                         />
+
+                        <group>
+                            <Target position={sizes.targetPosition} />
+                            <ReactLogo position={sizes.reactLogoPosition} />
+                        </group>
                         <ambientLight intensity={1} />
                         <directionalLight position={[10, 10, 10]} intensity={0.5} />
                     </Suspense>
