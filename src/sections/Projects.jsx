@@ -77,7 +77,7 @@ function Projects() {
             <Center>
               <Suspense fallback={<CanvasLoader />}>
                 <group scale={2} position={[-0.46, -3, 0]} rotation={[0, 0, 0]}>
-                  <DemoComputer />
+                  <DemoComputer texture={currentProject.texture} />
                 </group>
               </Suspense>
             </Center>
