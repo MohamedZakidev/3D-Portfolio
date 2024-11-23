@@ -1,6 +1,5 @@
 import { PerspectiveCamera } from "@react-three/drei"
 import { Canvas } from "@react-three/fiber"
-import { Leva } from "leva"
 import { Suspense } from "react"
 import { useMediaQuery } from "react-responsive"
 import Button from "../components/Button"
@@ -23,7 +22,6 @@ function Hero() {
 
     return (
         <section className="min-h-screen w-full flex flex-col relative">
-            <Leva />
             <div className="w-full mx-auto flex flex-col mt-20 sm:mt-36 c-space gap-3">
                 <p className="text-2xl sm:text-3xl font-medium text-white text-center font-generalsans">
                     Hi, I&apos;m Mohamed

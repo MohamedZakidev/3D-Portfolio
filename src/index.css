@@ -88,7 +88,7 @@ body {
 
   /* clients section */
   .client-container {
-    @apply grid md:grid-cols-2 grid-cols-1 gap-5 mt-12;
+    @apply grid md:grid-cols-2 grid-cols-1 gap-5;
   }
 
   .client-review {
@@ -126,11 +126,11 @@ body {
 
   /* contact section */
   .contact-container {
-    @apply max-w-xl relative z-10 sm:px-10 px-5 mt-12;
+    @apply max-w-xl relative z-10 sm:px-10 px-5 lg:mt-12;
   }
 
   .field-label {
-    @apply text-lg text-white-600;
+    @apply text-lg text-white-600 capitalize;
   }
 
   .field-input {

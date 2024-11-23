@@ -11,7 +11,7 @@ export default function DemoComputer(props) {
     const group = useRef()
     // eslint-disable-next-line react/prop-types
     const texture = useVideoTexture(props.texture)
-    // texture.flipY(false)
+    texture.flipY = false
 
     useGSAP(() => {
         gsap.from(group.current.rotation, {

@@ -5,6 +5,7 @@ import CanvasLoader from "../components/CanvasLoader"
 import DemoComputer from "../components/DemoComputer"
 import { myProjects } from "../constants"
 
+
 function Projects() {
   const projectsCount = myProjects.length
   const [selectedProjectIndex, setSelectedProjectIndex] = useState(0)
@@ -22,8 +23,8 @@ function Projects() {
 
   return (
     <section className="c-space my-20">
-      <h2 className="text-white-700 textShadow text-2xl xl:text-3xl font-semibold tracking-wide mb-10">My Selected Work</h2>
-      <div className="grid grid-cols-1 lg:grid-cols-2 mt-12 gap-5 w-full">
+      <h2 className="text-white-700 textShadow text-2xl xl:text-3xl font-semibold tracking-wide mb-5">My Selected Work</h2>
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 w-full">
 
         {/* 1 */}
         <div className="rounded-2xl flex flex-col gap-5 relative sm:p-10 py-10 px-5 shadow-2xl shadow-black-200">
@@ -63,6 +64,17 @@ function Projects() {
             <button className="arrow-btn" onClick={() => handleNavigation("prev")}>
               <img src="/assets/left-arrow.png" alt="left arrow" className="size-4" />
             </button>
+            <div className="flex items-center gap-2 justify-center">
+              {myProjects.map((_, index) => {
+                const isActive = index === selectedProjectIndex
+                return (
+                  <div
+                    key={index}
+                    className={`size-2.5 rounded-full ${isActive ? "bg-white-800" : "bg-white-500 hover:bg-white-600"}`}
+                  />
+                )
+              })}
+            </div>
             <button className="arrow-btn" onClick={() => handleNavigation("next")}>
               <img src="/assets/right-arrow.png" alt="right arrow" className="size-4" />
             </button>
@@ -81,7 +93,7 @@ function Projects() {
                 </group>
               </Suspense>
             </Center>
-            <OrbitControls maxPolarAngle={Math.PI / 2} />
+            <OrbitControls maxPolarAngle={Math.PI / 2} enableZoom={false} />
           </Canvas>
         </div>
 
