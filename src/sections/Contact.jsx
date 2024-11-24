@@ -106,7 +106,7 @@ function Contact() {
 
 
                         <label className="space-y-3" htmlFor="message">
-                            <span className="field-label">Email</span>
+                            <span className="field-label">message</span>
                             <textarea
                                 id="message"
                                 name="message"
