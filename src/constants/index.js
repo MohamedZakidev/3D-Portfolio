@@ -74,16 +74,21 @@ export const myProjects = [
         tags: [
             {
                 id: 1,
+                name: 'Next.js',
+                path: '/assets/nextjs.svg',
+            },
+            {
+                id: 2,
                 name: 'React.js',
                 path: '/assets/react.svg',
             },
             {
-                id: 2,
+                id: 3,
                 name: 'TailwindCSS',
                 path: 'assets/tailwindcss.png',
             },
             {
-                id: 3,
+                id: 4,
                 name: 'TypeScript',
                 path: '/assets/typescript.png',
             },
