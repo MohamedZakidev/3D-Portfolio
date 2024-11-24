@@ -20,7 +20,7 @@ function Footer() {
                 </a>
 
                 <a
-                    href="https://github.com/MohamedZakidev"
+                    href="https://www.linkedin.com/in/mohamed-zaki-55983b287/"
                     className="social-icon"
                     target="_blank"
                     rel="noreferrer"

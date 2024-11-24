@@ -4,12 +4,9 @@ import { Suspense } from "react"
 import { useMediaQuery } from "react-responsive"
 import Button from "../components/Button"
 import CanvasLoader from "../components/CanvasLoader"
-import Cube from "../components/Cube"
 import HackerRoom from "../components/HackerRoom"
 import HeroCamera from "../components/HeroCamera"
 import ReactLogo from "../components/ReactLogo"
-import Rings from "../components/Rings"
-import Target from "../components/Target"
 import { calculateSizes } from "../constants"
 
 function Hero() {
@@ -21,7 +18,7 @@ function Hero() {
     const sizes = calculateSizes(isSmall, isMobile, isTablet)
 
     return (
-        <section className="min-h-screen w-full flex flex-col relative">
+        <section id="home" className="min-h-screen w-full flex flex-col relative">
             <div className="w-full mx-auto flex flex-col mt-20 sm:mt-36 c-space gap-3">
                 <p className="text-2xl sm:text-3xl font-medium text-white text-center font-generalsans">
                     Hi, I&apos;m Mohamed
@@ -43,10 +40,10 @@ function Hero() {
                         </HeroCamera>
 
                         <group>
-                            <Target position={sizes.targetPosition} />
-                            <ReactLogo position={sizes.reactLogoPosition} />
-                            <Cube position={sizes.cubePosition} />
-                            <Rings position={sizes.ringPosition} />
+                            {isDesktop && <ReactLogo position={sizes.reactLogoPosition} />}
+                            {/* <Target position={sizes.targetPosition} /> */}
+                            {/* <Cube position={sizes.cubePosition} /> */}
+                            {/* <Rings position={sizes.ringPosition} /> */}
                         </group>
                         <ambientLight intensity={1} />
                         <directionalLight position={[10, 10, 10]} intensity={0.5} />

@@ -21,38 +21,41 @@ export const navLinks = [
     },
 ];
 
-export const clientReviews = [
+export const courses = [
     {
         id: 1,
-        name: 'Emily Johnson',
-        position: 'Marketing Director at GreenLeaf',
-        img: 'assets/review1.png',
-        review:
-            'Working with Adrian was a fantastic experience. He transformed our outdated website into a modern, user-friendly platform. His attention to detail and commitment to quality are unmatched. Highly recommend him for any web dev projects.',
+        name: 'Frontend Developer Career Path',
+        position: 'Scrimba Education platform',
+        img: 'assets/scrimbalogo.jpg',
+        review: 'Comprehensive 80-hour course designed to teach HTML, CSS, JavaScript, React. Through interactive lessons, over 200 coding challenges and hands-on projects, the course enabled me to build real-world applications, equipping them with the skills needed to launch a successful career in front-end development.',
+        certification: "https://scrimba.com/certificate-cert2uNjfK9m1m8s5om3YUFBSJxrQnGhda1rwtC"
     },
     {
         id: 2,
-        name: 'Mark Rogers',
-        position: 'Founder of TechGear Shop',
-        img: 'assets/review2.png',
+        name: 'Responsive web Design',
+        position: 'Scrimba Education platform',
+        img: 'assets/scrimbalogo.jpg',
         review:
-            'Adrian’s expertise in web development is truly impressive. He delivered a robust and scalable solution for our e-commerce site, and our online sales have significantly increased since the launch. He’s a true professional! Fantastic work.',
+            'Hands-on course focused on mastering the art of creating websites that are fully responsive across all devices and screen sizes. It covers CSS Flexbox, and CSS Grid, teaching how to design layouts that adapt to any screen. Through interactive lessons and practical projects.',
+        certification: "https://v1.scrimba.com/certificate/u6b2wvcZ/gresponsive"
     },
     {
         id: 3,
-        name: 'John Dohsas',
-        position: 'Project Manager at UrbanTech ',
-        img: 'assets/review3.png',
+        name: 'JavaScript Deep Dive',
+        position: 'Scrimba Education platform',
+        img: 'assets/scrimbalogo.jpg',
         review:
-            'I can’t say enough good things about Adrian. He was able to take our complex project requirements and turn them into a seamless, functional website. His problem-solving abilities are outstanding.',
+            'Provides an in-depth exploration of advanced JavaScript concepts like closures, promises, async/await, and higher-order functions. It focuses on strengthening problem-solving skills while building Google keep project.',
+        certification: "https://v1.scrimba.com/certificate/u6b2wvcZ/gjavascript"
     },
     {
         id: 4,
-        name: 'Ether Smith',
-        position: 'CEO of BrightStar Enterprises',
-        img: 'assets/review4.png',
+        name: 'Advanced React',
+        position: 'Scrimba Education platform',
+        img: 'assets/scrimbalogo.jpg',
         review:
-            'Adrian was a pleasure to work with. He understood our requirements perfectly and delivered a website that exceeded our expectations. His skills in both frontend backend dev are top-notch.',
+            'Covers advanced topics such as Compound components, React router6, custom hooks, context API, React performance optimization with projects and interactive lessons to gain the skills to build high performance and scalable React applications.',
+        certification: "https://v1.scrimba.com/certificate/u6b2wvcZ/greact"
     },
 ];
 

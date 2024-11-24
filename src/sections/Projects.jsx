@@ -22,7 +22,7 @@ function Projects() {
   }
 
   return (
-    <section className="c-space my-20">
+    <section id="work" className="c-space my-20">
       <h2 className="text-white-700 textShadow text-2xl xl:text-3xl font-semibold tracking-wide mb-5">My Selected Work</h2>
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 w-full">
 
@@ -56,7 +56,7 @@ function Projects() {
               ))}
             </div>
             <a href={currentProject.href} target="_blank" rel="noreferrer" className="z-50 flex items-center gap-2 cursor-pointer">
-              <p className="text-white-700 animate-pulse">Check Live site</p>
+              <p className="text-white animate-pulse">Check Live site</p>
               <img src="/assets/arrow-up.png" alt="arrow up" className="size-3" />
             </a>
           </div>
