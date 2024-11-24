@@ -62,7 +62,7 @@ export const myProjects = [
         desc: 'Dev-overflow is an innovative platform designed for developers to share and resolve technical challenges. It offers an intuitive experience for posting questions, providing answers, and collaborating within a vibrant developer community',
         subdesc:
             "Built as a robust full-stack application using Next.js 14, TypeScript, Clerk for authentication, MongoDB, and Zod for form validation. With server actions and real-time synchronization via webhooks, it ensures smooth and secure developer interactions",
-        href: 'https://www.youtube.com/watch?v=zfAb95tJvZQ',
+        href: 'https://dev-overflow-mocha.vercel.app',
         texture: '/textures/project/project1.mp4',
         logo: '/assets/project-logo1.png',
         logoStyle: {
