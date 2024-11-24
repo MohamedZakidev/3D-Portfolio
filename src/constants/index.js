@@ -95,13 +95,13 @@ export const myProjects = [
         ],
     },
     {
-        title: 'LiveDoc - Real-Time Google Docs Clone',
-        desc: 'LiveDoc is a powerful collaborative app that elevates the capabilities of real-time document editing. As an enhanced version of Google Docs, It supports millions of collaborators simultaneously, ensuring that every change is captured instantly and accurately.',
+        title: 'Career Guidance Network',
+        desc: 'Designed and developed a professional networking platform similar to LinkedIn. The platform enables users to create detailed profiles, connect with professionals, search for job opportunities,and access career advice',
         subdesc:
-            'With LiveDoc, users can experience the future of collaboration, where multiple contributors work together in real time without any lag, by using Next.js and Liveblocks newest features.',
-        href: 'https://www.youtube.com/watch?v=y5vE8y_f_OM',
+            'Built as a platform using Next.js, Tailwind CSS, and Python Django for a robust back end, the Career Guidance Network is designed to connect users with tailored career advice and resources efficiently.',
+        href: 'https://career-guidance-network.vercel.app/',
         texture: '/textures/project/project2.mp4',
-        logo: '/assets/project-logo2.png',
+        logo: '/assets/cgnlogo.svg',
         logoStyle: {
             backgroundColor: '#13202F',
             border: '0.2px solid #17293E',
@@ -111,42 +111,39 @@ export const myProjects = [
         tags: [
             {
                 id: 1,
+                name: 'Next.js',
+                path: '/assets/nextjs.svg',
+            },
+            {
+                id: 2,
                 name: 'React.js',
                 path: '/assets/react.svg',
             },
             {
-                id: 2,
+                id: 3,
                 name: 'TailwindCSS',
                 path: 'assets/tailwindcss.png',
             },
             {
-                id: 3,
-                name: 'TypeScript',
-                path: '/assets/typescript.png',
-            },
-            {
                 id: 4,
-                name: 'Framer Motion',
-                path: '/assets/framer.png',
+                name: 'Django',
+                path: '/assets/django.svg',
             },
         ],
     },
     {
-        title: 'CarePulse - Health Management System',
-        desc: 'An innovative healthcare platform designed to streamline essential medical processes. It simplifies patient registration, appointment scheduling, and medical record management, providing a seamless experience for both healthcare providers and patients.',
+        title: 'Netflix Clone',
+        desc: 'Designed to showcase a modern web development stack. It allows users to browse, search, and stream content, mimicking the core functionalities of the popular streaming service. With dynamic UI components and responsive design.',
         subdesc:
-            'With a focus on efficiency, CarePulse integrantes complex forms and SMS notifications, by using Next.js, Appwrite, Twillio and Sentry that enhance operational workflows.',
-        href: 'https://www.youtube.com/watch?v=lEflo_sc82g',
+            'Built using React.js with compound components design pettern, styled-components library, Firebase for authentication and database management, the Context API for state management and custom hooks.',
+        href: 'https://video-stream-8ac66d.netlify.app/',
         texture: '/textures/project/project3.mp4',
-        logo: '/assets/project-logo3.png',
+        logo: '/assets/netflixlogo.png',
         logoStyle: {
-            backgroundColor: '#60f5a1',
-            background:
-                'linear-gradient(0deg, #60F5A150, #60F5A150), linear-gradient(180deg, rgba(255, 255, 255, 0.9) 0%, rgba(208, 213, 221, 0.8) 100%)',
-            border: '0.2px solid rgba(208, 213, 221, 1)',
-            boxShadow: '0px 0px 60px 0px rgba(35, 131, 96, 0.3)',
+            backgroundColor: 'rgba(229, 9, 20, 0.2)',
+            boxShadow: '0px 0px 60px 0px rgba(229, 9, 20, 0.3)',
         },
-        spotlight: '/assets/spotlight3.png',
+        spotlight: '',
         tags: [
             {
                 id: 1,
@@ -155,27 +152,17 @@ export const myProjects = [
             },
             {
                 id: 2,
-                name: 'TailwindCSS',
-                path: 'assets/tailwindcss.png',
-            },
-            {
-                id: 3,
-                name: 'TypeScript',
-                path: '/assets/typescript.png',
-            },
-            {
-                id: 4,
-                name: 'Framer Motion',
-                path: '/assets/framer.png',
+                name: 'Firebase',
+                path: 'assets/firebase.svg',
             },
         ],
     },
     {
-        title: 'Horizon - Online Banking Platform',
-        desc: 'Horizon is a comprehensive online banking platform that offers users a centralized finance management dashboard. It allows users to connect multiple bank accounts, monitor real-time transactions, and seamlessly transfer money to other users.',
+        title: 'Space Travel',
+        desc: 'Space Travel is a visually captivating website that explores the space. Featuring a modern, responsive design, it provides users with an immersive experience to discover planets, crews, and space-themed visuals. The site prioritizes accessibility, ensuring an inclusive and engaging journey for all visitors.',
         subdesc:
             'Built with Next.js 14 Appwrite, Dwolla and Plaid, Horizon ensures a smooth and secure banking experience, tailored to meet the needs of modern consumers.',
-        href: 'https://www.youtube.com/watch?v=PuOVqP_cjkE',
+        href: 'https://clinquant-manatee-63dd3b.netlify.app/',
         texture: '/textures/project/project4.mp4',
         logo: '/assets/project-logo4.png',
         logoStyle: {
