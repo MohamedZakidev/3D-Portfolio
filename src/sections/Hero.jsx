@@ -28,7 +28,7 @@ function Hero() {
             </div>
 
             <div className="w-full h-full absolute inset-0">
-                <Canvas className="w-full h-full">
+                {/* <Canvas className="w-full h-full">
                     <Suspense fallback={<CanvasLoader />}>
                         <PerspectiveCamera makeDefault position={[0, 0, 20]} />
                         <HeroCamera isMobile={isMobile} isDesktop={isDesktop}>
@@ -42,26 +42,27 @@ function Hero() {
                         <group>
                             {isDesktop && <ReactLogo position={sizes.reactLogoPosition} />}
                             {/* <Target position={sizes.targetPosition} /> */}
-                            {/* <Cube position={sizes.cubePosition} /> */}
-                            {/* <Rings position={sizes.ringPosition} /> */}
-                        </group>
-                        <ambientLight intensity={1} />
-                        <directionalLight position={[10, 10, 10]} intensity={0.5} />
-                    </Suspense>
-                </Canvas>
-            </div>
+                {/* <Cube position={sizes.cubePosition} /> */}
+                {/* <Rings position={sizes.ringPosition} /> */}
+            </group>
+            <ambientLight intensity={1} />
+            <directionalLight position={[10, 10, 10]} intensity={0.5} />
+        </Suspense>
+                </Canvas > */
+}
+            </div >
 
-            <div className="c-space z-10 absolute bottom-7 left-0 right-0 w-full">
-                <a href="#about" className="w-fit">
-                    <Button
-                        containerClass="sm:w-fit w-full sm:min-w-96"
-                        isBeam
-                    >
-                        Let’s work together
-                    </Button>
-                </a>
-            </div>
-        </section>
+    <div className="c-space z-10 absolute bottom-7 left-0 right-0 w-full">
+        <a href="#about" className="w-fit">
+            <Button
+                containerClass="sm:w-fit w-full sm:min-w-96"
+                isBeam
+            >
+                Let’s work together
+            </Button>
+        </a>
+    </div>
+        </section >
     )
 }
 
