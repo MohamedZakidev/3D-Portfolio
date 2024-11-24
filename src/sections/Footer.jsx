@@ -18,6 +18,17 @@ function Footer() {
                         className="w-1/2 h-1/2"
                     />
                 </a>
+
+                <a
+                    href="https://github.com/MohamedZakidev"
+                    className="social-icon"
+                    target="_blank"
+                    rel="noreferrer"
+                >
+                    <img src="/assets/linkedin.svg" alt="github logo"
+                        className="w-1/2 h-1/2"
+                    />
+                </a>
             </div>
         </section>
     )
