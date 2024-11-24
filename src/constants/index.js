@@ -64,7 +64,7 @@ export const myProjects = [
             "Built as a robust full-stack application using Next.js 14, TypeScript, Clerk for authentication, MongoDB, and Zod for form validation. With server actions and real-time synchronization via webhooks, it ensures smooth and secure developer interactions",
         href: 'https://dev-overflow-mocha.vercel.app',
         texture: '/textures/project/project1.mp4',
-        logo: '/assets/project-logo1.png',
+        logo: '/assets/devoverflow.svg',
         logoStyle: {
             backgroundColor: '#2A1816',
             border: '0.2px solid #36201D',
