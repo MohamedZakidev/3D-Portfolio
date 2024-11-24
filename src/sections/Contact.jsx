@@ -57,7 +57,7 @@ function Contact() {
     }
 
     return (
-        <section className="c-space my-20">
+        <section id='contact' className="c-space my-20">
 
             <div className="relative py-8 px-2 md:py-12 lg:p-0 lg:min-h-screen flex items-center justify-center flex-col max-lg:bg-black-300/50 max-lg:rounded-xl">
                 <img

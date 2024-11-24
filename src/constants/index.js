@@ -160,11 +160,10 @@ export const myProjects = [
     {
         title: 'Space Travel',
         desc: 'Space Travel is a visually captivating website that explores the space. Featuring a modern, responsive design, it provides users with an immersive experience to discover planets, crews, and space-themed visuals. The site prioritizes accessibility, ensuring an inclusive and engaging journey for all visitors.',
-        subdesc:
-            'Built with Next.js 14 Appwrite, Dwolla and Plaid, Horizon ensures a smooth and secure banking experience, tailored to meet the needs of modern consumers.',
+        subdesc: 'Built using HTML, CSS, and JavaScript, the Space Travel project combines clean code with responsive layouts and accessible design principles, delivering a seamless experience across devices.',
         href: 'https://clinquant-manatee-63dd3b.netlify.app/',
         texture: '/textures/project/project4.mp4',
-        logo: '/assets/project-logo4.png',
+        logo: '/assets/spacelogo.svg',
         logoStyle: {
             backgroundColor: '#0E1F38',
             border: '0.2px solid #0E2D58',
@@ -174,34 +173,29 @@ export const myProjects = [
         tags: [
             {
                 id: 1,
-                name: 'React.js',
-                path: '/assets/react.svg',
+                name: 'Html',
+                path: '/assets/html.svg',
             },
             {
                 id: 2,
-                name: 'TailwindCSS',
-                path: 'assets/tailwindcss.png',
+                name: 'Css',
+                path: 'assets/css.svg',
             },
             {
                 id: 3,
-                name: 'TypeScript',
-                path: '/assets/typescript.png',
-            },
-            {
-                id: 4,
-                name: 'Framer Motion',
-                path: '/assets/framer.png',
+                name: 'JavaScript',
+                path: '/assets/javascript.svg',
             },
         ],
     },
     {
-        title: 'Imaginify - AI Photo Manipulation App',
-        desc: 'Imaginify is a groundbreaking Software-as-a-Service application that empowers users to create stunning photo manipulations using AI technology. With features like AI-driven image editing, a payments system, and a credits-based model.',
+        title: 'Instagram Clone',
+        desc: 'Instagram Clone is a dynamic social media platform designed to replicate the core features of Instagram. It allows users to create posts with captions and images while exploring a visually appealing and responsive interface.',
         subdesc:
-            'Built with Next.js 14, Cloudinary AI, Clerk, and Stripe, Imaginify combines cutting-edge technology with a user-centric approach. It can be turned into a side income or even a full-fledged business.',
-        href: 'https://www.youtube.com/watch?v=Ahwoks_dawU',
+            'Built using React for the front end, Chakra UI for modern styling, Firebase for backend services, and Zustand for state management, the Instagram Clone is optimized for scalability, responsiveness, and intuitive interactions.',
+        href: 'https://social-app-z.netlify.app',
         texture: '/textures/project/project5.mp4',
-        logo: '/assets/project-logo5.png',
+        logo: '/assets/instagram.svg',
         logoStyle: {
             backgroundColor: '#1C1A43',
             border: '0.2px solid #252262',
@@ -215,19 +209,19 @@ export const myProjects = [
                 path: '/assets/react.svg',
             },
             {
+                id: 1,
+                name: 'Zustand',
+                path: '/assets/zustand.svg',
+            },
+            {
                 id: 2,
-                name: 'TailwindCSS',
-                path: 'assets/tailwindcss.png',
+                name: 'Chakra Ui',
+                path: 'assets/chakraui.svg',
             },
             {
                 id: 3,
-                name: 'TypeScript',
-                path: '/assets/typescript.png',
-            },
-            {
-                id: 4,
-                name: 'Framer Motion',
-                path: '/assets/framer.png',
+                name: 'Firebase',
+                path: '/assets/firebase.svg',
             },
         ],
     },

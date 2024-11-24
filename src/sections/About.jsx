@@ -67,12 +67,14 @@ function About() {
                             <p className="grid-headtext">I’m very flexible with most time zones</p>
                             <p className="grid-subtext">I&apos;m based in Egypt, Cairo and open to remote work worldwide.</p>
                         </div>
-                        <Button
-                            isBeam
-                            containerClass="w-full"
-                        >
-                            Contact Me
-                        </Button>
+                        <a href="#contact">
+                            <Button
+                                isBeam
+                                containerClass="w-full"
+                            >
+                                Contact Me
+                            </Button>
+                        </a>
                     </div>
                 </div>
 

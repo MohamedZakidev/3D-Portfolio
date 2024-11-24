@@ -56,7 +56,7 @@ function Projects() {
               ))}
             </div>
             <a href={currentProject.href} target="_blank" rel="noreferrer" className="z-50 flex items-center gap-2 cursor-pointer">
-              <p className="text-white-600">Check Live site</p>
+              <p className="text-white-700 animate-pulse">Check Live site</p>
               <img src="/assets/arrow-up.png" alt="arrow up" className="size-3" />
             </a>
           </div>
