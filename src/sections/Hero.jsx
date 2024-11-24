@@ -2,6 +2,7 @@ import { PerspectiveCamera } from "@react-three/drei"
 import { Canvas } from "@react-three/fiber"
 import { Suspense } from "react"
 import { useMediaQuery } from "react-responsive"
+import Button from "../components/Button"
 import CanvasLoader from "../components/CanvasLoader"
 import HackerRoom from "../components/HackerRoom"
 import HeroCamera from "../components/HeroCamera"
@@ -49,11 +50,11 @@ function Hero() {
                 </div>
             ) : (
                 <div className="border border-cyan-400">
-                    <img src="/public/assets/hacker-room.png" alt="hacker room" />
+                    <img src="/assets/hacker-room.png" alt="hacker room" />
                 </div>
             )}
 
-            {/* <div className="c-space z-10 absolute bottom-7 left-0 right-0 w-full">
+            <div className="c-space z-10 absolute bottom-7 left-0 right-0 w-full">
                 <a href="#about" className="w-fit">
                     <Button
                         containerClass="sm:w-fit w-full sm:min-w-96"
@@ -62,7 +63,7 @@ function Hero() {
                         Let’s work together
                     </Button>
                 </a>
-            </div> */}
+            </div>
         </section>
     )
 }
