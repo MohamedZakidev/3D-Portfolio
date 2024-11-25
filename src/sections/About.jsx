@@ -16,7 +16,7 @@ function About() {
     }
 
     return (
-        <section id="about" className="c-space my-20 min-h-screen">
+        <section id="about" className="c-space my-10 sm:my-20 min-h-screen">
             <h2 className="capitalize text-white-700 textShadow text-2xl md:text-3xl font-semibold tracking-wide mb-5">About me</h2>
             <div className="grid grid-cols-1 xl:grid-cols-3 xl:grid-rows-6 md:grid-cols-2 gap-5 h-full">
 

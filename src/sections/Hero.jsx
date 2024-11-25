@@ -49,8 +49,11 @@ function Hero() {
                     </Canvas>
                 </div>
             ) : (
-                <div className="border border-cyan-400">
-                    <img src="/assets/hacker-room.png" alt="hacker room" />
+                <div className="w-full mx-auto">
+                    <img src="/assets/hacker-room.png" alt="hacker room"
+                        className="w-full md:w-[80%]  mx-auto"
+
+                    />
                 </div>
             )}
 
