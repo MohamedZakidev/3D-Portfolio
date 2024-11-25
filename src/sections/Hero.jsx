@@ -24,7 +24,7 @@ function Hero() {
                     Hi, I&apos;m Mohamed
                     <span className="waving-hand max-sm:ml-1">👋</span>
                 </p>
-                <p className="hero_tag text-gray_gradient">Making the web Interactive</p>
+                <p className="hero_tag text-gray_gradient">React Frontend Developer</p>
             </div>
 
             {isDesktop ? (
