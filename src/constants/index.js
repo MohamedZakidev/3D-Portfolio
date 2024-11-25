@@ -95,6 +95,11 @@ export const myProjects = [
                 name: 'TypeScript',
                 path: '/assets/typescript.png',
             },
+            {
+                id: 5,
+                name: 'MongoDB',
+                path: '/assets/mongodb.png',
+            },
         ],
     },
     {
