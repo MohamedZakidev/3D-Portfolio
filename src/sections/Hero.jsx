@@ -40,7 +40,7 @@ function Hero() {
                         </HeroCamera>
 
                         <group>
-                            <ReactLogo position={sizes.reactLogoPosition} />
+                            {isDesktop && <ReactLogo position={sizes.reactLogoPosition} />}
                         </group>
                         <ambientLight intensity={1} />
                         <directionalLight position={[10, 10, 10]} intensity={0.5} />
