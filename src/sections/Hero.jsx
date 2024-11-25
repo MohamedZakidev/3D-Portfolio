@@ -22,33 +22,12 @@ function Hero() {
             <div className="w-full mx-auto flex flex-col mt-20 sm:mt-36 c-space gap-3">
                 <p className="text-2xl sm:text-3xl font-medium text-white text-center font-generalsans">
                     Hi, I&apos;m Mohamed
-                    <span className="waving-hand">👋</span>
+                    <span className="waving-hand max-sm:ml-1">👋</span>
                 </p>
                 <p className="hero_tag text-gray_gradient">Making the web Interactive</p>
             </div>
 
-            <div className="w-full h-full absolute inset-0">
-                <Canvas className="w-full h-full">
-                    <Suspense fallback={<CanvasLoader />}>
-                        <PerspectiveCamera makeDefault position={[0, 0, 20]} />
-                        <HeroCamera isMobile={isMobile} isDesktop={isDesktop}>
-                            <HackerRoom
-                                rotation={[0, -Math.PI, 0]}
-                                position={sizes.deskPosition}
-                                scale={sizes.deskScale}
-                            />
-                        </HeroCamera>
-
-                        <group>
-                            {isDesktop && <ReactLogo position={sizes.reactLogoPosition} />}
-                        </group>
-                        <ambientLight intensity={1} />
-                        <directionalLight position={[10, 10, 10]} intensity={0.5} />
-                    </Suspense>
-                </Canvas>
-            </div>
-
-            {/* {isDesktop ? (
+            {isDesktop ? (
                 <div className="w-full h-full absolute inset-0">
                     <Canvas className="w-full h-full">
                         <Suspense fallback={<CanvasLoader />}>
@@ -76,7 +55,7 @@ function Hero() {
 
                     />
                 </div>
-            )} */}
+            )}
 
             <div className="c-space z-10 absolute bottom-7 left-0 right-0 w-full">
                 <a href="#about" className="w-fit">
