@@ -28,7 +28,7 @@ function Hero() {
             </div>
 
             {isDesktop ? (
-                <div className="w-full h-full inset-0 top-[100px] absolute border border-red-400">
+                <div className="w-full h-full inset-0 max-lg:top-[10%] absolute border border-red-400">
                     <Canvas className="w-full h-full">
                         <Suspense fallback={<CanvasLoader />}>
                             <PerspectiveCamera makeDefault position={[0, 0, 20]} />
@@ -49,7 +49,7 @@ function Hero() {
                     </Canvas>
                 </div>
             ) : (
-                <div className="w-full mx-auto">
+                <div className="w-full mx-auto h-full mt-9" >
                     <img src="/assets/hacker-room.png" alt="hacker room"
                         className="w-full md:w-[80%]  mx-auto"
 
