@@ -59,12 +59,8 @@ function Contact() {
     return (
         <section id='contact' className="c-space my-20">
 
-            <div className="relative py-8 px-2 md:py-12 lg:p-0 lg:min-h-screen flex items-center justify-center flex-col max-lg:bg-black-300/50 max-lg:rounded-xl">
-                <img
-                    src="/assets/terminal.png"
-                    alt="terminal background image"
-                    className="absolute inset-0 z-0 min-h-screen max-lg:hidden"
-                />
+            <div className="relative py-8 px-2 md:py-12 lg:p-0 lg:min-h-screen flex items-center justify-center flex-col bg-black-300/50 rounded-xl">
+
                 <div className="contact-container">
                     <h4 className="text-white-700 textShadow text-2xl md:text-3xl xl:text-3xl font-semibold tracking-wide">Let&apos;s Talk</h4>
                     <p className="text-lg text-white-600 mt-3">
