@@ -52,12 +52,11 @@ function Hero() {
                 <div className="w-full mx-auto h-full mt-9" >
                     <img src="/assets/hacker-room.png" alt="hacker room"
                         className="w-full md:w-[80%]  mx-auto"
-
                     />
                 </div>
             )}
 
-            <div className="c-space z-10 absolute bottom-7 left-0 right-0 w-full">
+            <div className="c-space z-10 max-lg:top-[10%] absolute bottom-7 left-0 right-0 w-full">
                 <a href="#about" className="w-fit">
                     <Button
                         containerClass="sm:w-fit w-full sm:min-w-96"
