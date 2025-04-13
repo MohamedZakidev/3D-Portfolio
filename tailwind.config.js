@@ -3,9 +3,6 @@ export default {
   content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
   theme: {
     extend: {
-      screens: {
-        'short': { 'raw': '(max-height: 300px)' }, // or min-height
-      },
       fontFamily: {
         generalsans: ['General Sans', 'sans-serif'],
       },

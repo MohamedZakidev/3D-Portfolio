@@ -28,7 +28,7 @@ function Hero() {
             </div>
 
             {isDesktop ? (
-                <div className="w-full h-full inset-0 top-[10%] absolute border border-red-400">
+                <div className="w-full h-full inset-0 top-[10%] absolute">
                     <Canvas className="w-full h-full">
                         <Suspense fallback={<CanvasLoader />}>
                             <PerspectiveCamera makeDefault position={[0, 0, 20]} />
