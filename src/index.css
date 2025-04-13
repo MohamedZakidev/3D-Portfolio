@@ -126,7 +126,7 @@ body {
 
   /* contact section */
   .contact-container {
-    @apply max-w-xl sm:px-10 px-5 border;
+    @apply max-w-xl sm:px-10 px-5;
   }
 
   .field-label {
