@@ -7,7 +7,9 @@ function NavItems() {
             {navLinks.map(item => {
                 return (
                     <li key={item.id} className="nav-li">
-                        <a href={item.href} className="nav-li-a" onClick={() => { }}>
+                        <a href={item.href}
+                            className="nav-li-a"
+                        >
                             {item.name}
                         </a>
                     </li>
